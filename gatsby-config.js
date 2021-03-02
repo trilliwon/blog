@@ -6,7 +6,7 @@ module.exports = {
       name: `@trilliwon`,
       summary: `Software Developer`,
     },
-    description: `A simple, fixed sidebar two columns Gatsby.js blog starter.`,
+    description: `Won's Blog about Software Development and my life.`,
     siteUrl: `https://www.trilliwon.com`,
     social: {
       twitter: `trilliwon`,
