@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:var(--hr);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:var(--textLink);text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.anchor{box-shadow:none;}a.anchor svg[aria-hidden="true"]{stroke:var(--textLink);}</style><style data-href="/styles.e465c25c7f03b5f27e13.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.block{display:block}.flex{display:flex}.table{display:table}.hidden{display:none}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.leading-none{line-height:1}.p-1{padding:.25rem}.p-4{padding:1rem}.fixed{position:fixed}.relative{position:relative}.underline{text-decoration:underline}.transition{transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}@keyframes spin{to{transform:rotate(1turn)}}@keyframes ping{75%,to{transform:scale(2);opacity:0}}@keyframes pulse{50%{opacity:.5}}@keyframes bounce{0%,to{transform:translateY(-25%);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,.2,1)}}body{--bg:#fff;--lightBg:#f5f5f5;--textNormal:#181818;--textTitle:#181818;--textLink:#fd5e53;--hr:rgba(3,2,2,0.2);background-color:var(--bg)}body.dark{-webkit-font-smoothing:antialiased;--bg:#1e1e1e;--lightBg:#0f0f0f;--textNormal:#e0e0e0;--textTitle:#fff;--textLink:#ff6363;--hr:hsla(0,0%,100%,0.2)}a.gatsby-resp-image-link{color:var(--bg);transition:all .2s ease}a.gatsby-resp-image-link:hover{cursor:pointer;transform:translateY(-2px);box-shadow:0 6px 13px 2px rgba(0,0,0,.25)}blockquote,h1,h2,h3,h4,h5,h6{color:var(--textTitle)}.footnotes{word-break:break-all}button{border:none;margin:0;padding:0;width:auto;overflow:visible;background:transparent;cursor:pointer;color:inherit;font:inherit;line-height:normal;-webkit-font-smoothing:inherit;-moz-osx-font-smoothing:inherit;-webkit-appearance:none;outline:0}.sidebar{height:200px;width:100%;position:fixed;z-index:1;top:0;left:0;overflow-x:hidden;text-align:center;background-color:var(--lightBg)}.main-content{background-color:var(--bg);position:absolute;top:200px;z-index:10;padding:0 20px;margin-left:0}@media only screen and (min-width:768px){.sidebar{height:100vh;width:300px}.main-content{padding:0 100px;height:100vh;width:calc(100% - 380px);margin-left:300px;top:0}}@media (min-width:768px){.md\:h-screen{height:100vh}}</style><meta name="generator" content="Gatsby 2.32.0"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='UA-93898714-1',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-93898714-1', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      
+      
+      
+      
+      }</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=6732875e2c58d1d5232b8ddfa276b171" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=6732875e2c58d1d5232b8ddfa276b171"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=6732875e2c58d1d5232b8ddfa276b171"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=6732875e2c58d1d5232b8ddfa276b171"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=6732875e2c58d1d5232b8ddfa276b171"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=6732875e2c58d1d5232b8ddfa276b171"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=6732875e2c58d1d5232b8ddfa276b171"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=6732875e2c58d1d5232b8ddfa276b171"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=6732875e2c58d1d5232b8ddfa276b171"/><title data-react-helmet="true">Metal Study Log | Won</title><meta data-react-helmet="true" name="description" content="Metal Programming Guide Metal Programming Guide The Metal framework supports GPU-accelerated advanced 3D graphics rendering and data-parallel computation…"/><meta data-react-helmet="true" property="og:title" content="Metal Study Log"/><meta data-react-helmet="true" property="og:description" content="Metal Programming Guide Metal Programming Guide The Metal framework supports GPU-accelerated advanced 3D graphics rendering and data-parallel computation…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="trilliwon"/><meta data-react-helmet="true" name="twitter:title" content="Metal Study Log"/><meta data-react-helmet="true" name="twitter:description" content="Metal Programming Guide Metal Programming Guide The Metal framework supports GPU-accelerated advanced 3D graphics rendering and data-parallel computation…"/><meta data-react-helmet="true" name="google-site-verification" content="VuYZVgZ7kdC0HnSEYFAmKuwptq5C1ezb2xlBUQOrMnA"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-23c5b1157bb5ec428524.js"/><link as="script" rel="preload" href="/framework-8e528b732ab2eaadb7b7.js"/><link as="script" rel="preload" href="/app-d472c0ea16cbbb8f5a33.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/547d6747ad54289c4cf011054cc421f3a7a5d337-3e062d9b7bbfdbafcaf3.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-63b35ae7ff5fdded488a.js"/><link as="fetch" rel="preload" href="/page-data/metal/2019-04-30-metal/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/240262808.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>
+void function() {
+  window.__onThemeChange = function() {}
+
+  var preferredTheme
+  try {
+    preferredTheme = localStorage.getItem('theme')
+  } catch (err) { }
+
+  function setTheme(newTheme) {
+    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+      document.body.classList.replace(preferredTheme, newTheme)
+    } else {
+      document.body.classList.add(newTheme)
+    }
+
+    window.__theme = newTheme
+    preferredTheme = newTheme
+    window.__onThemeChange(newTheme)
+  }
+
+  window.__setPreferredTheme = function(newTheme) {
+    setTheme(newTheme)
+    try {
+      localStorage.setItem('theme', newTheme)
+    } catch (err) {}
+  }
+
+  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  darkQuery.addListener(function(e) {
+    window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+  })
+
+  setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
+}()
+    </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="background-color:var(--bg);color:var(--textNormal);transition:color 0.2s ease-out, background 0.2s ease-out;min-height:100vh"><div class="sidebar"><div class="md:h-screen p-4 flex flex-col justify-center items-center" style="min-height:200px"><h2 style="font-size:2.5rem;line-height:3.5rem;margin-bottom:0;margin-top:0;font-family:Montserrat, sans-serif"><a style="box-shadow:none;color:inherit" href="/">Home</a></h2></div></div><div class="main-content relative"><main><article><header><h1 style="margin-bottom:0">Metal Study Log</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">April 30, 2019</p></header><section><h1>Metal Programming Guide</h1>
+<ul>
+<li><a href="https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221">Metal Programming Guide</a></li>
+</ul>
+<blockquote>
+<p>The Metal framework supports GPU-accelerated advanced 3D <strong>graphics rendering</strong> and <strong>data-parallel computation workloads</strong>.
+Metal provides a modern and streamlined API for fine-grained, low-level control of the organization, processing and submission of graphic and computation commands, as well as the management of the associated data and resources for these commands.
+A primary goal of Metal is to minimize the CPU overhead incurred by executing GPU workloads.</p>
+</blockquote>
+<hr>
+<ul>
+<li>Command submission model</li>
+<li>Memory management model</li>
+<li>Use of independently compiled code for graphic shader</li>
+<li>Data-parallel computation functions</li>
+<li>Use of Metal API</li>
+</ul>
+<hr>
+<h2>Fundamental Metal Concepts</h2>
+<blockquote>
+<p>Metal provides a single, unified programming interface and language for both graphics and data-parallel computation workloads. Metal enables you to integrate graphics and computation tasks much more efficiently without needing to use separate APIs and shader languages.</p>
+</blockquote>
+<h3>Metal framework provides</h3>
+<ul>
+<li>
+<p>Low-overhead interface</p>
+<ul>
+<li>You get control over the asynchronous behavior of the GPU for efficient multithreading used to create and commit command buffers in parallel.</li>
+</ul>
+</li>
+<li>Memory and resource menagement</li>
+<li>Integrated support for both graphic and compute operations</li>
+<li>Precompiled shaders</li>
+</ul>
+<h3>Command Organization and Execution Model</h3>
+<h4>MTLDevice</h4>
+<ul>
+<li><code class="language-text">MTLDevice</code> protocol defines the interface that represents a single GPU.</li>
+<li>A <code class="language-text">command queue</code> consists of a queue of <code class="language-text">command buffers</code>, and a <code class="language-text">command queue</code> organizes the order of execution of those <code class="language-text">command buffers</code>.</li>
+<li>A command buffer contains encoded commands that are intended for execution on a particular device.</li>
+<li>A command encoder appends rendering, computing, and blitting commands onto a command buffer, and those command buffers are eventually committed for execution on the device.</li>
+</ul>
+<h4>MTLCommandQueue</h4>
+<ul>
+<li>The <code class="language-text">MTLCommandQueue</code> protocol defines an interface for command queues, primarily supporting methods for creating command buffer objects.</li>
+<li>The <code class="language-text">MTLCommandBuffer</code> protocol defines an interface for command buffers and provides methods for creating command encoders, enqueueing command buffers for execution, checking status, and other operations. </li>
+<li>
+<p>Encoder types</p>
+<ul>
+<li>The <code class="language-text">MTLRenderCommandEncoder</code> protocol encodes graphics (3D) rendering commands for a single rendering pass.</li>
+<li>The <code class="language-text">MTLComputeCommandEncoder</code> protocol encodes data-parallel computation workloads.</li>
+<li>The <code class="language-text">MTLBlitCommandEncoder</code> protocol encodes simple copy operations between buffers and textures, as well as utility operations like mipmap generation.</li>
+</ul>
+</li>
+<li>At any point in time, only a single command encoder can be active and append commands into a command buffer. </li>
+<li>Each command encoder must be ended before another command encoder can be created for use with the same command buffer.</li>
+<li>The one exception to the <strong>“one active command encoder for each command buffer”</strong> rule is the <code class="language-text">MTLParallelRenderCommandEncoder</code> protocol, discussed in <code class="language-text">Encoding a Single Rendering Pass Using Multiple Threads</code>.</li>
+</ul>
+<p><img src="https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Art/Cmd-Model-1_2x.png"></p>
+<hr>
+<h3>The Device Object Represents a GPU</h3>
+<blockquote>
+<p>The <code class="language-text">MTLDevice</code> object represent a GPU that can execute commands.
+The MTLDevice protocol has methods <strong>to create new command queues</strong>, <strong>to allocate buffers from memory</strong>, <strong>to create textures</strong>, and <strong>to make queries about the device’s capabilities</strong>.</p>
+</blockquote>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> defaultDevice <span class="token operator">=</span> <span class="token function">MTLCreateSystemDefaultDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<h3>Transient and Non-transient Objects in Metal</h3>
+<ul>
+<li><code class="language-text">Command buffer</code> and <code class="language-text">command encoder</code> objects are transient and designed for a single use. They are very inexpensive to allocate and deallocate, so their creation methods return autoreleased objects.</li>
+<li>
+<p>The following objects are not transient. Reuse these objects in performance sensitive code, and avoid creating them repeatedly.</p>
+<ul>
+<li>Command queues</li>
+<li>Data buffers</li>
+<li>Textures</li>
+<li>Sampler states</li>
+<li>Libraries</li>
+<li>Compute states</li>
+<li>Render pipeline states</li>
+<li>Depth/stencil states</li>
+</ul>
+</li>
+</ul>
+<h3>Command Queue</h3>
+<ul>
+<li>A command queue accepts an ordered list of command buffers that the GPU will execute.</li>
+<li>All command buffers sent to a single queue are guaranteed to execute in the order in which the command buffers were enqueued.</li>
+<li>In general, command queues are expected to be long-lived, so they should not be repeatedly created and destroyed.</li>
+</ul>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> commandQueue <span class="token operator">=</span> defaultDevice<span class="token punctuation">.</span><span class="token function">makeCommandQueue</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<h3>Command Buffer</h3>
+<ul>
+<li>A <code class="language-text">command buffer</code> stores encoded commands until the buffer is committed for execution by the GPU.</li>
+<li>A single command buffer can contain many different kinds of encoded commands, depending on the number and type of encoders that are used to build it.</li>
+<li>In a typical app, an entire frame of rendering is encoded into a single command buffer, even if rendering that frame involves multiple rendering passes, compute processing functions, or blit operations.</li>
+<li>Command buffers are transient single-use objects and do not support reuse.</li>
+<li>Once a command buffer has been committed for execution, the only valid operations are to wait for the command buffer to be scheduled or completed—through synchronous calls or handler blocks discussed in Registering Handler Blocks for Command Buffer Execution—and to check the status of the command buffer execution.</li>
+<li>Command buffers also represent the only independently trackable unit of work by the app, and they define the coherency boundaries established by the Metal memory model, as detailed in Resource Objects: Buffers and Textures.</li>
+</ul>
+<h4>Creating a Command Buffer</h4>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> commandBuffer <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">makeCommandBuffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> commandBuffer <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">makeCommandBufferWithUnretainedReferences</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// only for extremely performance-critical apps</span></code></pre></div>
+<h4>Executing Commands</h4>
+<ul>
+<li>A command buffer does not begin execution until it is committed.</li>
+<li>Once committed, command buffers are executed in the order in which they were enqueued.</li>
+<li>The <code class="language-text">enqueue</code> method reserves a place for the command buffer on the command queue, but does not commit the command buffer for execution. When this command buffer is eventually committed, it is executed after any previously enqueued command buffers within the associated command queue.</li>
+<li>The <code class="language-text">commit</code> method causes the command buffer to be executed as soon as possible, but after any previously enqueued command buffers in the same command queue are committed. If the command buffer has not previously been enqueued, commit makes an implied enqueue call.</li>
+</ul>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">commandBuffer<span class="token punctuation">.</span><span class="token function">enqueue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+commandBuffer<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<h4>Registering Handler Blocks for Command Buffer Execution</h4>
+<ul>
+<li>The MTLCommandBuffer methods listed below monitor command execution. Scheduled and completed handlers are invoked in execution order on an undefined thread. Any code you execute in these handlers should complete quickly; if expensive or blocking work needs to be done, defer that work to another thread.</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">// should be called before calling commit() method
+commandBuffer?.addCompletedHandler({ commandBuffer in })
+commandBuffer?.addScheduledHandler({ commandBuffer in })</code></pre></div>
+<h4>Monitoring Command Buffer Execution Status</h4>
+<ul>
+<li>The read-only status property contains a MTLCommandBufferStatus enum value listed in <a href="https://developer.apple.com/documentation/metal/mtlcommandbufferstatus">Command Buffer Status Codes</a> that reflects the current scheduling stage in the lifetime of this command buffer.</li>
+<li>If execution finishes successfully, the value of the read-only error property is nil. If execution fails, then status is set to MTLCommandBufferStatusError, and the error property may contain a value listed in <a href="https://developer.apple.com/documentation/metal/mtlcommandbuffererror/code">Command Buffer Error Codes</a> that indicates the cause of the failure.</li>
+</ul>
+<h3>Command Encoder</h3>
+<ul>
+<li>A command encoder is a transient object that you use once to write commands and state into a single command buffer in a format that the GPU can execute. </li>
+<li>Many command encoder object methods append commands onto the command buffer.</li>
+<li>While a command encoder is active, it has the exclusive right to append commands for its command buffer. </li>
+<li>Once you finish encoding commands, call the endEncoding method. To write further commands, create a new command encoder.</li>
+</ul>
+<h4>Creating a Command Encoder Object</h4>
+<ul>
+<li>
+<p>Because a command encoder appends commands into a specific command buffer, you create a command encoder by requesting one from the MTLCommandBuffer object you want to use it with. Use the following MTLCommandBuffer methods to create command encoders of each type:</p>
+<ul>
+<li>The renderCommandEncoderWithDescriptor: method creates a MTLRenderCommandEncoder object for graphics rendering to an attachment in a MTLRenderPassDescriptor.</li>
+<li>The computeCommandEncoder method creates a MTLComputeCommandEncoder object for data-parallel computations.</li>
+<li>The blitCommandEncoder method creates a MTLBlitCommandEncoder object for memory operations.</li>
+<li>The parallelRenderCommandEncoderWithDescriptor: method creates a MTLParallelRenderCommandEncoder object that enables several MTLRenderCommandEncoder objects to run on different threads while still rendering to an attachment that is specified in a shared MTLRenderPassDescriptor.</li>
+</ul>
+</li>
+</ul>
+<h4>Render Command Encoder</h4>
+<blockquote>
+<p>Graphics rendering can be described in terms of a rendering pass.
+A MTLRenderCommandEncoder object represents the rendering state and drawing commands associated with a single rendering pass.
+A MTLRenderCommandEncoder requires an associated MTLRenderPassDescriptor (described in Creating a Render Pass Descriptor) that includes the color, depth, and stencil attachments that serve as destinations for rendering commands.</p>
+</blockquote>
+<ul>
+<li>Specify graphics resources, such as buffer and texture objects, that contain vertex, fragment, or texture image data</li>
+<li>Specify a <code class="language-text">MTLRenderPipelineState</code> object that contains compiled rendering state, including vertex and fragment shaders</li>
+<li>Specify fixed-function state, including viewport, triangle fill mode, scissor rectangle, depth and stencil tests, and other values</li>
+<li>Draw 3D primitives</li>
+</ul>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> commandEncoder <span class="token operator">=</span> commandBuffer<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">makeComputeCommandEncoder</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<h4>Compute Command Encoder</h4>
+<ul>
+<li>For data-parallel computing, the MTLComputeCommandEncoder protocol provides methods to encode commands in the command buffer that can specify the compute function and its arguments (for example, texture, buffer, and sampler state) and dispatch the compute function for execution.</li>
+<li>To create a compute command encoder object, use the computeCommandEncoder method of MTLCommandBuffer.</li>
+</ul>
+<h3>Multiple Threads, Command Buffers, and Command Encoders</h3>
+<ul>
+<li>Most apps use a single thread to encode the rendering commands for a single frame in a single command buffer.</li>
+<li>At the end of each frame, you commit the command buffer, which both schedules and begins command execution.</li>
+</ul>
+<p><a href="https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Art/Cmd-Model-threads_2x.png"></a></p>
+<h1>Resource Objects: Buffers and Textures</h1>
+<ul>
+<li>
+<p>Metal resource objects (MTLResource) for storing unformatted memory and formatted image data. There are two types of MTLResource objects:</p>
+<ul>
+<li><code class="language-text">MTLBuffer</code> represents an allocation of unformatted memory that can contain any type of data. Buffers are often used for vertex, shader, and compute state data.</li>
+<li><code class="language-text">MTLTexture</code> represents an allocation of formatted image data with a specified texture type and pixel format. Texture objects are used as source textures for vertex, fragment, or compute functions, as well as to store graphics rendering output (that is, as an attachment).</li>
+</ul>
+</li>
+</ul>
+<h2>Buffers Are Typeless Allocations of Memory</h2>
+<ul>
+<li>A MTLBuffer object represents an allocation of memory that can contain any type of data.</li>
+</ul>
+<h3>Creating a Buffer Object</h3>
+<ul>
+<li>The following MTLDevice methods create and return a MTLBuffer object:</li>
+</ul>
+<h3>Textures Are Formatted Image Data</h3>
+<ul>
+<li>A MTLTexture object represents an allocation of formatted image data that can be used as a resource for a vertex shader, fragment shader, or compute function, or as an attachment to be used as a rendering destination.</li>
+<li>
+<p>A MTLTexture object can have one of the following structures:</p>
+<ul>
+<li>A 1D, 2D, or 3D image</li>
+<li>An array of 1D or 2D images</li>
+<li>A cube of six 2D images</li>
+</ul>
+</li>
+</ul>
+<h4>Creating a Texture Object with a Texture Descriptor</h4>
+<ul>
+<li>MTLTextureDescriptor defines the properties that are used to create a MTLTexture object, including its image size (width, height, and depth), pixel format, arrangement (array or cube type) and number of mipmaps.</li>
+<li>The MTLTextureDescriptor properties are only used during the creation of a MTLTexture object. After you create a MTLTexture object, property changes in its MTLTextureDescriptor object no longer have any effect on that texture.</li>
+<li>
+<p>To create one or more textures from a descriptor:</p>
+<ol>
+<li>Create a custom MTLTextureDescriptor object that contains texture properties that describe the texture data:</li>
+<li>Create a texture from the MTLTextureDescriptor object by calling the newTextureWithDescriptor: method of a MTLDevice object. After texture creation, call the replaceRegion:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage: method to load the texture image data.</li>
+<li>To create more MTLTexture objects, you can reuse the same MTLTextureDescriptor object, modifying the descriptor’s property values as needed.</li>
+</ol>
+</li>
+</ul>
+<h4>Working with Texture Slices</h4>
+<ul>
+<li>A slice is a single 1D, 2D, or 3D texture image and all its associated mipmaps. For each slice:</li>
+<li>All texture objects have at least one slice; cube and array texture types may have several slices.</li>
+</ul>
+<h4>Pixel Formats for Textures</h4>
+<ul>
+<li>MTLPixelFormat specifies the organization of color, depth, and stencil data storage in individual pixels of a MTLTexture object. There are three varieties of pixel formats: ordinary, packed, and compressed.</li>
+<li>For example, MTLPixelFormatRGBA8Unorm is a 32-bit format with eight bits for each color component; the lowest addresses contains red,</li>
+</ul>
+<h3>Creating a Sampler States Object for Texture Lookup</h3>
+<ul>
+<li>A <code class="language-text">MTLSamplerState</code> object defines the addressing, filtering, and other properties that are used when a graphics or compute function performs texture sampling operations on a <code class="language-text">MTLTexture</code> object.</li>
+</ul>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> desc <span class="token operator">=</span> <span class="token function">MTLSamplerDescriptor</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+desc<span class="token punctuation">.</span>minFilter <span class="token operator">=</span> <span class="token builtin">MTLSamplerMinMagFilter</span><span class="token punctuation">.</span>linear
+desc<span class="token punctuation">.</span>magFilter <span class="token operator">=</span> <span class="token builtin">MTLSamplerMinMagFilter</span><span class="token punctuation">.</span>linear
+desc<span class="token punctuation">.</span>sAddressMode <span class="token operator">=</span> <span class="token builtin">MTLSamplerAddressMode</span><span class="token punctuation">.</span><span class="token keyword">repeat</span>
+desc<span class="token punctuation">.</span>tAddressMode <span class="token operator">=</span> <span class="token builtin">MTLSamplerAddressMode</span><span class="token punctuation">.</span><span class="token keyword">repeat</span>
+<span class="token comment">// all properties below have default values</span>
+desc<span class="token punctuation">.</span>mipFilter <span class="token operator">=</span> <span class="token builtin">MTLSamplerMipFilter</span><span class="token punctuation">.</span>notMipmapped
+desc<span class="token punctuation">.</span>maxAnisotropy <span class="token operator">=</span> <span class="token number">1</span>
+desc<span class="token punctuation">.</span>normalizedCoordinates <span class="token operator">=</span> <span class="token boolean">true</span>
+desc<span class="token punctuation">.</span>lodMinClamp <span class="token operator">=</span> <span class="token number">0.0</span>
+desc<span class="token punctuation">.</span>lodMaxClamp <span class="token operator">=</span> <span class="token builtin">Float</span><span class="token punctuation">.</span>greatestFiniteMagnitude
+<span class="token comment">// create MTLSamplerState</span>
+<span class="token keyword">let</span> sampler <span class="token operator">=</span> device<span class="token punctuation">.</span><span class="token function">makeSamplerState</span><span class="token punctuation">(</span>descriptor<span class="token punctuation">:</span> desc<span class="token punctuation">)</span></code></pre></div>
+<h1>Functions and Libraries</h1>
+<blockquote>
+<p><a href="https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Prog-Func/Prog-Func.html">link</a></p>
+</blockquote>
+<h2><code class="language-text">MTLFunction</code> Represents a Shader or Compute Function</h2>
+<blockquote>
+<p>A <code class="language-text">MTLFunction</code> object represents a single function that is written in the Metal shading language and executed on the GPU as part of a graphics or compute pipeline. </p>
+</blockquote>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">defaultLibrary<span class="token punctuation">.</span><span class="token function">makeFunction</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">"vertexPassThrough"</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>
+<p>To pass data or state between the Metal runtime and a graphics or compute function written in the Metal shading language, you assign an argument index for textures, buffers, and samplers. </p>
+<ul>
+<li>The argument index identifies which texture, buffer, or sampler is being referenced by both the Metal runtime and Metal shading code.</li>
+</ul>
+</li>
+<li><strong>For a rendering pass</strong>, you specify a <code class="language-text">MTLFunction</code> object for use as a vertex or fragment shader in a <code class="language-text">MTLRenderPipelineDescriptor</code> object, as detailed in Creating a Render Pipeline State.</li>
+<li><strong>For a compute pass</strong>, you specify a <code class="language-text">MTLFunction</code> object when creating a <code class="language-text">MTLComputePipelineState</code> object for a target device, as described in Specify a Compute State and Resources for a Compute Command Encoder.</li>
+</ul>
+<h2>A Library Is a Repository of Functions</h2>
+<ul>
+<li>A MTLLibrary object represents a repository of one or more MTLFunction objects. A single MTLFunction object represents one Metal function that has been written with the shading language. </li>
+<li>In the Metal shading language source code, any function that uses a <strong>Metal function qualifier</strong> (<code class="language-text">vertex</code>, <code class="language-text">fragment</code>, or <code class="language-text">kernel</code>) can be represented by a <code class="language-text">MTLFunction</code> object in a library. </li>
+<li>A Metal function without one of these function qualifiers cannot be directly represented by a <code class="language-text">MTLFunction</code> object, although it can called by another function within the shader.</li>
+<li>
+<p>The MTLFunction objects in a library can be created from either of these sources:</p>
+<ul>
+<li>Metal shading language code that was compiled into a binary library format during the app build process.</li>
+<li>A text string containing Metal shading language source code that is compiled by the app at runtime.</li>
+</ul>
+</li>
+</ul>
+<h3>Creating a Library from Compiled Code</h3>
+<ul>
+<li>For the best performance, compile your Metal shading language source code into a library file during your app’s build process in Xcode, which avoids the costs of compiling function source during the runtime of your app. </li>
+<li>
+<p>To create a MTLLibrary object from a library binary, call one of the following methods of MTLDevice:</p>
+<ul>
+<li>newDefaultLibrary retrieves a library built for the main bundle that contains all shader and compute functions in an app’s Xcode project.</li>
+<li>newLibraryWithFile:error: takes the path to a library file and returns a MTLLibrary object that contains all the functions stored in that library file.</li>
+<li>newLibraryWithData:error: takes a binary blob containing code for the functions in a library and returns a MTLLibrary object.</li>
+</ul>
+</li>
+</ul>
+<h3>Creating a Library from Source Code</h3>
+<ul>
+<li>To create a MTLLibrary from a string of Metal shading language source code that may contain several functions, call one of the following methods of MTLDevice.</li>
+<li>
+<p>These methods compile the source code when the library is created. To specify the compiler options to use, set the properties in a MTLCompileOptions object.</p>
+<ul>
+<li><code class="language-text">newLibraryWithSource:options:error:</code> synchronously compiles source code from the input string to create MTLFunction objects and then returns a MTLLibrary object that contains them.</li>
+<li><code class="language-text">newLibraryWithSource:options:completionHandler:</code> asynchronously compiles source code from the input string to create MTLFunction objects and then returns a MTLLibrary object that contains them. completionHandler is a block of code that is invoked when object creation is completed.</li>
+</ul>
+</li>
+</ul>
+<h3>Getting a Function from a Library</h3>
+<ul>
+<li>The <code class="language-text">newFunctionWithName:</code> method of MTLLibrary returns a MTLFunction object with the requested name. If the name of a function that uses a Metal shading language function qualifier is not found in the library, then newFunctionWithName: returns nil.</li>
+</ul>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">defaultLibrary<span class="token punctuation">.</span><span class="token function">makeFunction</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">"vertexPassThrough"</span><span class="token punctuation">)</span></code></pre></div>
+<h3>Determining Function Details at Runtime</h3>
+<ul>
+<li>Because the actual contents of a <code class="language-text">MTLFunction</code> object are defined by a graphics shader or compute function that may be compiled before the MTLFunction object was created, its source code might not be directly available to the app. You can query the following MTLFunction properties at run time:</li>
+<li><code class="language-text">name</code>, a string with the name of the function.</li>
+<li><code class="language-text">functionType</code>, which indicates whether the function is declared as a vertex, fragment, or compute function.</li>
+<li><code class="language-text">vertexAttributes</code>, an array of MTLVertexAttribute objects that describe how vertex attribute data is organized in memory and how it is mapped to vertex function arguments.</li>
+</ul>
+<h2>Graphics Rendering: Render Command Encoder</h2>
+<p><img src="https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Art/gfx-pipeline_2x.png">
+Metal Graphics Rendering Pipeline</p>
+<ul>
+<li>A MTLRenderCommandEncoder object represents a single rendering command encoder</li>
+<li>A MTLParallelRenderCommandEncoder object enables a single rendering pass to be broken into a number of separate MTLRenderCommandEncoder objects, each of which may be assigned to a different thread. </li>
+</ul>
+<h2>Creating and Using a Render Command Encoder</h2>
+<ol>
+<li>Create a <code class="language-text">MTLRenderPassDescriptor</code> object to define a collection of attachments that serve as the rendering destination for the graphics commands in the command buffer for that rendering pass. Typically, you create a <code class="language-text">MTLRenderPassDescriptor</code> object once and reuse it each time your app renders a frame. See Creating a Render Pass Descriptor.</li>
+<li>Create a MTLRenderCommandEncoder object by calling the renderCommandEncoderWithDescriptor: method of MTLCommandBuffer with the specified render pass descriptor. See Using the Render Pass Descriptor to Create a Render Command Encoder.</li>
+<li>Create a MTLRenderPipelineState object to define the state of the graphics rendering pipeline (including shaders, blending, multisampling, and visibility testing) for one or more draw calls. To use this render pipeline state for drawing primitives, call the setRenderPipelineState: method of MTLRenderCommandEncoder. For details, see Creating a Render Pipeline State.</li>
+<li>Set textures, buffers, and samplers to be used by the render command encoder, as described in Specifying Resources for a Render Command Encoder.</li>
+<li>Call MTLRenderCommandEncoder methods to specify additional fixed-function state, including the depth and stencil state, as explained in Fixed-Function State Operations.</li>
+<li>Finally, call MTLRenderCommandEncoder methods to draw graphics primitives, as described in Drawing Geometric Primitives.</li>
+</ol>
+<h3>Creating a Render Pass Descriptor</h3>
+<h3>Creating a Render Pipeline State</h3>
+<blockquote>
+<p>to define the graphics state for any draw calls.
+<a href="https://developer.apple.com/documentation/metal/mtlrenderpipelinestate">https://developer.apple.com/documentation/metal/mtlrenderpipelinestate</a></p>
+</blockquote>
+<hr>
+<h2>Specifying Resources for a Render Command Encoder</h2>
+<p><img src="https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Art/ArgTable-render_2x.png"></p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAADVklEQVQ4y41U+U8TURDuX0CQo9ykXKXch7EcATnCoUFAIBZ+wEQCETX8APEiNihiCaGEEECIEiOJJKghIIggKXeBgOBVkRuknC3ttrvttlvLoU67AqaQ4GSTfW8y35uZb773KPL/NqlUqlAq1WpCJpORHsqJGAiV6k2r1a4IhQO93QiCYBgGfspBBGkGSDJOQxDa7e3O9recgnu89+8W5ufhrMPMKIpCEPz+xcMax/HZmem2Ny2cwgfxsVEP2XdLCtn1dbVbYjFAKGSQaHNTuLwkFoswheIASWZmJV20MDGxppozfTxZCXFcTtHQQD/4/2aG1Yvnz7hF97mPHnye+KBSqaCqra2tnd3dF/X1ZkZGNDt7FxrNh+4U7OOeGHW27nGlRCLRZQYkQRDtba1xkaEXwoPzrmUuzM8BpWArK8Lw4GBLUzMXmqM/gx7izYgPD8q7llFdVoLKUV1mKE+hUACNN65mBXi7J8ZEsG/nDvZ1fxN8TUlMMDc2trWycrCzD/BkxAb6drS1aDSa1RUh2RRlnxi1eHNtoLdzW4P18zrOeLt5MejUU6esLSytqRZuTs5+dAcup5AgNBCso5acM2xQTCHeWC4uyHtaU/FxjF9VXurn5upoZ+NgY0M1BaqodHvb5POx87NzAIM2D0UikyEYTkz3VrXUsfl8fnNTY1RokL+7q78Hw82JFso87e7seDmNtbS0BESSJB+YrmwY8friNzkiVavV0FJtZZmnC43p4xHo63ErJ2tkiL++tgYDN0AeigRT4HCGDMV/ancQqSQyJNCb4RwVGujlQmt+2bD36zfM5qhy97WNYohE9EPQI5gYSrvEotlYJ8fFxEWH0R3szzL9vowPw+Sg1WPKBqdSRXwZ7mwoTu95zb2ewQpj+iXGRuRkZz2prgjwoudkpna1NmJyBFepjskMcpmaFPR1d4131Iw13n5VX3MuMqy8tGR0gJcSHZCeFJ0aH1lWlP9pdBAyGYKhJCBTJBLz2ptGeM3bu3szU9/h9vxYXGh4VsNh597Jybh540p+bvak4LMSxw9FcoBH9c2jmBJBpEqlEi4JDJbQaMEt2tyAb31tFTQv12vT8DHQnyeT6wtDZKQYgCTd1cX0BkKGBo+wfdJjQpoB238Aeuh/pENro9MAAAAASUVORK5CYII=" alt="@trilliwon" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/ba0bb1b15dc42bd13943d4a43519d1c0/8ba1e/profile-pic.png 1x,
+/static/ba0bb1b15dc42bd13943d4a43519d1c0/f937a/profile-pic.png 1.5x,
+/static/ba0bb1b15dc42bd13943d4a43519d1c0/71eb7/profile-pic.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/ba0bb1b15dc42bd13943d4a43519d1c0/8ba1e/profile-pic.png 1x,
+/static/ba0bb1b15dc42bd13943d4a43519d1c0/f937a/profile-pic.png 1.5x,
+/static/ba0bb1b15dc42bd13943d4a43519d1c0/71eb7/profile-pic.png 2x" src="/static/ba0bb1b15dc42bd13943d4a43519d1c0/8ba1e/profile-pic.png" alt="@trilliwon" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>@trilliwon</strong> <!-- -->Software Developer<!-- --> </p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/ios/2018-12-29-swift-ARC/">← <!-- -->Swift ARC</a></li><li><a rel="next" href="/python/2019-06-10-python-queue/">Python stack &amp; queue<!-- --> →</a></li></ul></nav></main><footer style="padding:30px;margin-top:4.375rem;padding-top:1.75rem"><div style="float:right"><a href="/rss.xml" target="_blank" rel="noopener noreferrer">rss</a></div><a href="https://mobile.twitter.com/trilliwon" target="_blank" rel="noopener noreferrer">twitter</a> <!-- -->•<!-- --> <a href="https://github.com/trilliwon" target="_blank" rel="noopener noreferrer">github</a> <!-- -->•<!-- --> <a href="https://stackoverflow.com/users/8813422/won" target="_blank" rel="noopener noreferrer">stack overflow</a></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/metal/2019-04-30-metal/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0eca59d2ee8c0828e3a6.js"],"app":["/app-d472c0ea16cbbb8f5a33.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5fc510504e8f4eb4ecb7.js"],"component---src-templates-blog-list-tsx":["/component---src-templates-blog-list-tsx-09a41c4076dc4ab686c2.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-63b35ae7ff5fdded488a.js"]};/*]]>*/</script><script src="/polyfill-0eca59d2ee8c0828e3a6.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-63b35ae7ff5fdded488a.js" async=""></script><script src="/547d6747ad54289c4cf011054cc421f3a7a5d337-3e062d9b7bbfdbafcaf3.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-d472c0ea16cbbb8f5a33.js" async=""></script><script src="/framework-8e528b732ab2eaadb7b7.js" async=""></script><script src="/webpack-runtime-23c5b1157bb5ec428524.js" async=""></script></body></html>
