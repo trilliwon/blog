@@ -87,5 +87,11 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-cname`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-7605276289595110`,
+      },
+    },
   ],
 }
