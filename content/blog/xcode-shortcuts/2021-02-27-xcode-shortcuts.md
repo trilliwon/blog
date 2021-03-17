@@ -1,5 +1,5 @@
 ---
-title: "생산성 향상을 위한 Xcode shortcuts: ⌘ + R 을 넘어서"
+title: "생산성 향상을 위한 Xcode 단축키들: ⌘ + R 을 넘어서"
 date: "2021-02-27T10:00:03.284Z"
 description: "생산성은 주어진 시간 동안 생산하는 가치의 양이죠. 가치를 올리거나 시간을 줄이면 생산성이 향상됩니다..."
 categories: [xcode, ios, productivity]
