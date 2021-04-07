@@ -6,9 +6,8 @@ categories: [github]
 ---
 
 
-# In commit message just ad following text as format #<issue number> followed by fix, close
+# In commit message just add following text as format #<issue number> followed by fix, close
 
-```
 - `fix #xxx`
 - `fixes #xxx`
 - `fixed #xxx`
@@ -18,4 +17,3 @@ categories: [github]
 - `resolve #xxx`
 - `resolves #xxx`
 - `resolved #xxx`
-```
